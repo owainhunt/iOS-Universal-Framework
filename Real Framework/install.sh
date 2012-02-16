@@ -13,7 +13,7 @@ if [[ $SCRIPT_DIR != /* ]]; then
     fi
 fi
 
-DEFAULT_GLOBAL_DEVELOPER_PATH="/Developer"
+DEFAULT_GLOBAL_DEVELOPER_PATH="/Applications"
 GLOBAL_DEVELOPER_PATH="$DEFAULT_GLOBAL_DEVELOPER_PATH"
 LOCAL_DEVELOPER_PATH="$HOME/Library/Developer"
 
@@ -24,8 +24,8 @@ SPECIFICATIONS_FILE="UFW-iOSStaticFramework.xcspec"
 TEMPLATES_SRC_PATH="$SCRIPT_DIR/$TEMPLATES_DIR"
 TEMPLATES_DST_PATH="$LOCAL_DEVELOPER_PATH/Xcode/$TEMPLATES_DIR"
 
-IOS_SPECIFICATIONS_PATH="Platforms/iPhoneOS.platform/$SPECIFICATIONS_DIR"
-SIM_SPECIFICATIONS_PATH="Platforms/iPhoneSimulator.platform/$SPECIFICATIONS_DIR"
+IOS_SPECIFICATIONS_PATH="Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/$SPECIFICATIONS_DIR"
+SIM_SPECIFICATIONS_PATH="Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/$SPECIFICATIONS_DIR"
 
 
 echo "iOS Real Static Framework Installer"
